@@ -3,8 +3,8 @@
 <html>
 <head>
 <title>Median Sales Price CPI Adjusted</title>
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="http://dimplejs.org/dist/dimple.v2.1.6.min.js"></script>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://dimplejs.org/dist/dimple.v2.1.6.min.js"></script>
 
 <style>
 body {
@@ -49,7 +49,7 @@ body {
     <script type="text/javascript">
 //Start Bar Chart
 var svgBar = dimple.newSvg("#BarChart", "92%", "95%");
-    d3.csv("https://raw.githubusercontent.com/d59gibson/mediansales/gh-pages/Housing%20Price%20Data_95_2015.csv", function (data) {
+    d3.csv("https://raw.githubusercontent.com/d59gibson/mediansales/gh-pages/Housing%20Price%20Data.csv", function (data) {
       dimple.filterData(data, "Municipality", ["Lexington", "Natick", "Norwood", "Reading", "Burlington", "Winchester"]);
 var BarChart = new dimple.chart(svgBar, data);
       BarChart.setBounds("15%", "5%", "65%", "82%");
